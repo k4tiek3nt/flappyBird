@@ -171,7 +171,7 @@ function preloadAssets() {
             loadedAssets.sounds++;
             checkAllAssetsLoaded();
         };
-        audio.onerror = () => console.error(Failed to load sound: ${src});
+        audio.onerror = () => console.error('Failed to load sound: ${src}'); //Added quote so that message can print.
         audio.src = src;
         audio.preload = 'auto'; // Trigger loading for audio
     });
