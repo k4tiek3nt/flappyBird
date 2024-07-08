@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Hide scroll bars */
+}
+
+canvas {
+    display: block;
+    background-image: url('assets/backgrounds/bg.png'); /* Set background image */
+    background-color: transparent; /* Ensure canvas background is transparent */
+    background-size: cover; /* Cover the entire canvas */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    border: none; /* Remove default canvas border */
+    width: 100%;    
+    height: 100%;
+    margin: 0 auto;
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+#restartButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+    margin: 10px auto;
+    display: none; /* Hide the restart button by default */
+}
+
+#gameOverMessage {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #000;
+}
